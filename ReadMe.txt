@@ -1,0 +1,1 @@
+This is the day 1 assignment for setup maven by Buyi Chen.
