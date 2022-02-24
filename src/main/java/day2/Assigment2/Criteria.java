@@ -1,5 +1,7 @@
 package day2.Assigment2;
 
+import java.util.HashMap;
+
 public class Criteria {
     public String getFolderPath() {
         return folderPath;
@@ -9,11 +11,11 @@ public class Criteria {
         this.folderPath = folderPath;
     }
 
-    public String getExtension() {
+    public HashMap<String, Integer> getExtension() {
         return extension;
     }
 
-    public void setExtension(String extension) {
+    public void setExtension(HashMap<String, Integer> extension) {
         this.extension = extension;
     }
 
@@ -42,17 +44,13 @@ public class Criteria {
     }
 
     private String folderPath;
-    private String extension;
+    private HashMap<String, Integer> extension;
     private int fileNum;
     private int subFolderNum;
     private boolean containSubFolder;
 
-    public Criteria(String folderPath, String extension, int fileNum, int subFolderNum, boolean containSubFolder) {
+    public Criteria(String folderPath) {
         this.folderPath = folderPath;
-        this.extension = extension;
-        this.fileNum = fileNum;
-        this.subFolderNum = subFolderNum;
-        this.containSubFolder = containSubFolder;
     }
 
 
