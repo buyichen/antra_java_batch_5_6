@@ -1,0 +1,5 @@
+# LinkedList of List vs LinkedList of Queue
+
+By assigning the `LinkedList<String>` to a variable of type `Queue<String>`, you can only access the methods in the `LinkedList` that are available in the `Queue<String>` interface, which includes support for enqueuing and dequeuing elements. This would be useful if you needed to write a program that used a queue for various operations and wanted to implement that queue by using a linked list.
+
+By assigning the `LinkedList<String>` to a variable of type `List<String>`, you can only access the methods in the `LinkedList` that are available in the `List<String>` interface, which are normal operations for maintaining a sequence of elements. This would be useful, for example, if you needed to process a list of elements that could grow and shrink anywhere.
