@@ -78,3 +78,59 @@
     - Learn more about Stream API
 
 
+## March 11
+
+- **Content Reviewed Today:**
+    - Java 8 new feature (mainly on Stream API)
+    - Types of No-SQL database.
+- **New Things Learned Today:**
+    - **Collection vs Stream**
+        - The main difference between a Collection and a Stream is that Collection contains its elements, but a Stream doesn’t. Stream work on a view where elements are actually store by Collection or array, but unlike other views, any changed made on Stream doesn’t reflect the original Collection.
+    - **What does it mean by “Stream is lazy”?**
+        - It means that most of the methods are defined on Java.util.stream.Stream class is lazy. They will not work by just including them on the Stream pipeline. They only work when we call a terminal method on the Stream and finish as soon as they find the data they are looking for rather than scanning through the whole set of data.
+    - **How can we transform Stream to primitive type Stream?**
+        - We can use mapToInt, mapToDouble and mapToLong that can be used to transform stream of objects to a stream of primitive types.
+        - Example:
+
+            ```java
+              
+            List<String> list = Arrays.asList("3", "6", "8", 
+                                                        "14", "15");
+            list.stream().mapToInt(num -> Integer.parseInt(num))
+            .filter(num -> num % 3 == 0)
+            .forEach(System.out::println);
+            ```
+
+    - **What is Parallel Stream in Java Stream API?**
+        - We can execute streams in serial or in parallel. When a stream executes in parallel, the Java runtime partitions the stream into multiple sub-streams.
+        - Example:
+
+            ```java
+            List<IntegerlistOfNumbers = Arrays.asList(1, 2, 3, 4);
+            listOfNumbers.parallelStream().forEach(number ->
+                System.out.println(number + " " + Thread.currentThread().getName())
+            );
+            ```
+
+    - **Disadvantage of Stream**
+        - Once a Stream is consumed, it can’t be used later.
+        - Lambda expressions in Java can only access to the final variables of the enclosing scope.
+        - Stream is worse than for loop in terms of heap and CPU usage.
+        - More hard to debug.
+    - **MongoDB No-SQL Alternatives**
+        - **Apache Cassandra**
+          Apache Cassandra is a heavyweight MongoDB alternative that’s ideal for enterprises with large datasets.
+        - **Redis**
+          Like Apache Cassandra, Redis comes with linearly scaling high performance and excellent built-in search capabilities.
+        - **OrientDB**
+          OrientDB is an excellent choice for modeling data with complex relationships, and, unlike some of the other MongoDB alternatives. Thus, it is a good choice for graph databases.
+        - **DynamoDB**
+          Amazon DynamoDB is an excellent option for global applications with a ton of users.
+        - **CouchDB**
+          CouchDB is perfect if you’re handling an enormous amount of loosely structured data.
+- **Learning Plan Tomorrow**
+    - Keep revising the Checklist
+    - Start previewing the topic for the advanced training
+        - Web Programming Concept
+        - Java Servlet
+    - Get Deeper for implementation of HashMap and ConcurrentHashMap by research online.
