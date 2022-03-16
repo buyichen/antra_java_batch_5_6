@@ -148,22 +148,64 @@
         - HashMap’s implementation
     - **Comparator vs Comparable**
 - **New Things Learned Todays:**
-    - **What is JDBC and How does it work?**
+    - **What is JDBC and How does it work?**  
       JDBC (Java Database Connectivity) is the Java API that manages connecting to a database, issuing queries and commands, and handling result sets obtained from the database.
       JDBC establish a connection with a data source, send queries and update statements to the data source, then process the result. The processes are under JDBC drivers which are client-side adapters that convert requests from Java programs to a protocol that the DBMS can understand.
-    - **What are JDBC statements? List all types of JDBC statements and their usage.**
+    - **What are JDBC statements? List all types of JDBC statements and their usage.**  
       There are three types of statements in JDBC, Statement, Prepared Statement Callable Statement.
-      **Statement**:
+      **Statement**:  
       A statement object is used to send a simple SQL statement to the database with no parameters. If n rows need to be inserted, then the same statement gets compiled n number of times.
-      **PreparedStatement**:
+      **PreparedStatement**:  
       The Prepared Statement interface extends the Statement interfaces. It represents a precompiled SQL statement which can be executed multiple times. This accepts parameterized SQL quires and you can pass 0 or more parameters to this query.
       Initially, this statement uses place holders “?” instead of parameters, later on, we can pass arguments to these dynamically using the set methods of the PreparedStatement interface.
-      **CallableStatement**:
+      **CallableStatement**:  
       The CallableStatement interface provides methods to execute stored procedures. Since the JDBC API provides a stored procedure SQL escape syntax, we can call stored procedures of all RDBMS in a single standard way. It do provide a better performance due to pre-compilation.
     - **What is Callable Statement in JDBC? Give an example.
-      CallableStatement**:
+      CallableStatement**:  
       The CallableStatement interface provides methods to execute stored procedures. Since the JDBC API provides a stored procedure SQL escape syntax, we can call stored procedures of all RDBMS in a single standard way. It do provide a better performance due to pre-compilation.
       If there is a stored procedures in the database called myProcedure. We can prepare the statement by using: `CallableStatement cstmt = con.prepareCall("{call myProcedure(?, ?, ?)}");`
-- **Learning Plan Tomorrow**
+- **Learning Plan Tomorrow**  
     - Review JVM related topic
     - Keep learning JDBC
+
+### March 15
+
+- **Content Review Today:**
+    - **JVM**
+        - Class Loader
+            - Types of class loader: Bootstrap, Extension, Application
+            - Processes of class loader:
+                - Loading
+                - Linking
+                    - Verification
+                    - Preparation
+                    - Resolution
+                - Initialization
+        - Runtime Memory/Data Area (5 components):
+            - Program Counter Register
+            - Stack
+            - Heap
+            - Method Area
+            - Native Method Area
+        - Execution Engine:
+            - Interpreter
+            - JIT Compiler
+            - Garbage Collector
+        - Java Native Interface
+- **New Things Learned Today**
+    - **volatile keyword:**
+        - Visibility  
+          Visibility is mean when multiple threads visit a same variable, if one thread modified that variable, all the other threads can see the changed value of the variable immediately.
+          By using volatile keyword, the variable under the volatile will be immediately updated to the main memory once it been modified. Every time before the volatile variable been used, it will always fresh and updated from main memory. Thus, we can use volatile to make sure the visibility during the variable operation in multi-threading environment.
+        - Atomicity  
+          Atomicity means that an operation cannot be terminate with any reason. The operation must be all done, or not done.
+          **Volatile cannot grantee the atomicity.**
+        - Instruction Ordering  
+          Instruction Ordering means that the order of program execution follow the same order as the code.
+          Volatile can forbid the order of instructions be optimized by CPU which can grantee the exactly same expected order of instruction from our code.
+        - volatile + CAS(Compare and Swap Two Thread) = thread safe
+          Used by java.util.concurrent. CAS grantee the atomicity which the volatile lacked of.
+            - [ABA problem](https://www.baeldung.com/cs/aba-concurrency)
+- **Learning Plan Tomorrow**
+    - Keep Learning the Java Concurrency
+    - Review Java keywords
