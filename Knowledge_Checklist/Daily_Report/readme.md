@@ -335,3 +335,97 @@
     - Keep reviewing this week’s content:
         - Hibernate
         - Java Reflection Mechanism
+
+## March 17
+
+- **Content Review Today:**
+    - **Java Data Type**
+        - Primitive Data Type:
+            - `int`, `double`, `float`, `long`, `short`, `byte`, `char`, `boolean`
+        - Non-primitive Data Type:
+            - Wrapper Class
+                - `String`, `Integer`, `Byte`, `Character`, `Double`, etc.
+        - String Constant Pool
+            - == vs equals()
+        - String vs StringBuffer vs StringBuilder
+    - **Hibernate**
+        - ORM (Object Relational Mapping)
+        - Advantage of Hibernate
+            - Clean Readable Code
+            - HQL (Hibernate Query Language)
+            - Transaction Management
+            - Exception Handling
+            - OOP Supporting
+        - Important Interfaces
+            - Configuration
+            - SessionFactory
+            - Session
+            - Criteria
+            - Query
+            - Transaction
+        - Lazy Loading
+        - First/Second Level Cache
+        - Hibernate Configuration File
+    - **Java Reflection**
+        - Class Object
+            - Methods of Class Object
+        - Usage of Reflection
+            - IDE
+            - Debugger
+            - Test Tools
+            - Spring framework
+- **New Things Learned Today:**
+    - **HTTP Request Methods:**
+        - GET
+          The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+        - HEAD
+          The HEAD method asks for a response identical to a GET request, but without the response body.
+        - POST
+          The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+        - PUT
+          The PUT method replaces all current representations of the target resource with the request payload.
+        - DELETE
+          The DELELTE method deletes the specified resource.
+        - CONNECT
+          The CONNECT method establishes a tunnel to the server identified by the target resource.
+        - OPTIONS
+          The OPTIONS method describes the communication options for the target resource.
+        - TRACE
+          The TRACE method performs a message loop-back test along the path to the target resource.
+        - PATCH
+          The PATCH method applies partial modifications to a resources.
+    - **POST vs PUT**
+
+      The difference between POST and PUT is that PUT requests are idempotent. Thus, by calling a same PUT request multiple times, it always produce the same result. Whereas, calling a same POST request multiple times will creating affect the resource multiple times.
+
+    - **HTTP Response Status Codes**
+        - 1xx: The request was received, continuing process.
+            - `100 Continue`
+              This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
+            - `101 Switching Protocols`
+              This code is sent in response to an `Upgrade`
+              request header from the client and indicates the protocol the server is switching to.
+        - 2xx: success code
+            - `200 OK`
+              The request succeeded.
+            - `204 No Content`
+              There is no content to send for this request, but the headers may be useful. The user agent may update its cached headers for this resource with the new ones.
+        - 3xx: redirection (clients need to take additional action)
+            - `301 Moved Permanently`
+              The URL of the requested resource has been changed permanently. The new URL is given in the response.
+            - `302 Found`
+              This response code means that the URI of requested resource has been changed *temporarily*. Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
+        - 4xx: client errors, the request contains bad syntax or cannot be fulfilled.
+            - `400 Bad Request`
+              The server cannot or will not process the request due to something that is perceived to be a client error.
+            - `404 Not Found`
+              The server can not find the requested resource.
+        - 5xx: service errors, the server failed to fulfill an apparently valid request.
+            - `500 Internal Server Error`(for security season, generic error, no details)
+              The server has encountered a situation it does not know how to handle.
+            - `502 Bad Gateway`
+              This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
+    - **Learning Plan Tomorrow**
+        - Learning more about HTTP and TCP/IP
+        - Review Java 8 new feature
+        - Review Exception in Java
