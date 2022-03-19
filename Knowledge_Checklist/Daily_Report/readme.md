@@ -429,3 +429,63 @@
         - Learning more about HTTP and TCP/IP
         - Review Java 8 new feature
         - Review Exception in Java
+
+## March 18
+
+- **Content Review Today:**
+    - Java 8 New Feature
+        - Optional
+        - Functional Interface
+        - Lambda Expression
+        - Relationship between Lambda and Functional Interface
+        - Stream API
+            - Advantage/Disadvantage
+            - When to use?
+            - intermediate and terminal operation
+    - Exception
+        - Checked Exception
+        - Unchecked Exception
+        - Keywords
+            - try-catch
+            - throw
+            - throws
+            - finally
+            - Exception Hierarchy
+            - Custom Exception
+- **New Things Learned Today:**
+    - **Java Servlet**
+        - **What is Servlet?**
+
+          Servlets are the Java programs that run on the Java-enabled web server or application server. They are used to handle the request obtained from the webserver, process the request, produce the response, then send a response back the the webserver. Servlets work on the server-side which are capable of handling complex requests obtained from the webserver.
+
+        - **What is servlet life cycle?**
+            1. The servlet is initialized by calling the init() method.
+            2. The servlet calls service() method to process a client’s request.
+            3. The servlet is terminated by calling the destroy() method.
+            4. Finally, servlet is garbage collected by the garbage collector of the JVM.
+        - **How does Java Servlet work?**
+            - **Explain how does Java Servlet work?**
+                1. When the web server (e.g. Apache Tomcat) starts up, the servlet container deploy and loads all the servlets. During this step Servlet container creates ServletContext object. **ServletContext is an interface that defines the set of methods that a servlet can use to communicate with the servlet container**.
+                   Note: **There is only one ServletContext per webapp** which is common to all the servlets. ServletContext has several useful methods such as addListener(), addFilter() etc.
+                2. Once the servlet is loaded, the servlet container creates the instance of servlet class. For each instantiated servlet, its **init()** method is invoked.
+                3. Client (user browser) sends an Http request to web server on a certain port. Each time the web server receives a request, the servlet container creates **HttpServletRequest** and **HttpServletResponse** objects. The HttpServletRequest object provides the access to the request information and the HttpServletResponse object allows us to format and change the http response before sending it to the client.
+                   The servlet container spawns a new thread that calls **service()** method for each client request. **The service() method dispatches the request to the correct handler method based on the type of request**.
+                   For example if server receives a Get Request the service() method would dispatch the request to the doGet() method by calling the doGet() method with request parameters. Similarly the requests like Post, Head, Put, etc. are dispatched to the corresponding handlers doPost(), doHead(), doPut() etc. by service() method of servlet.
+                4. When servlet container shuts down, it unloads all the servlets and calls destroy() method for each initialized servlets.
+    - **HTTP**
+        - **What is HTTP Session?**
+
+          HTTP sessions is an industry standard feature that allows Web servers to maintain **user identity** and to **store user-specific data** during multiple request/response interactions between a client application and a Web application. HTTP sessions preserves:
+
+            - Information about the session itself (session identifier, creation time, time last accessed, etc.)
+            - Contextual information about the user (client login state, for example, plus whatever else the Web application needs to save)
+        - **What is URL and What is URI?**
+            - **URI**
+              A URI (Uniform Resource Identifier) is a string containing characters that identify a physical or logical resource. URI follows syntax rules to ensure uniformly. Moreover, it also maintains extensibility via a hierarchical naming schema. URL and URN (Uniform Resource Name) are the two ways to achieve URI.
+            - **URL**
+              A URL (Uniform Resource Locator) is a type of URI which we can identify a physical or logical resource by a series of location.
+- **Learning Plan Tomorrow:**
+    - Learn more about TCP/IP
+    - Learn more about Servlet Application
+    - Review Java Generics
+    - Review Comparator and Comparable
