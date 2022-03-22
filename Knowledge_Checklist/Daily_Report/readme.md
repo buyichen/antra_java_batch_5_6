@@ -489,3 +489,64 @@
     - Learn more about Servlet Application
     - Review Java Generics
     - Review Comparator and Comparable
+
+## March 21
+
+- **Content Review Today:**
+    - **Java Generics**
+        - Generic Type Parameter: *`T`*
+        - Advantage of Generics:
+            - Stronger type checks at compile time.
+            - Elimination of casts.
+            - Enabling programmers to implement generic algorithms.
+        - Type Erasure
+        - Generic Method vs Generic Type
+        - Type Inference
+        - Bounded Type Parameter
+    - **Comparator**
+        - `java.util.Comparator`
+        - `compare(Object obj1, Object obj2)`
+        - Compare two arbitrary objects
+        - multiple sorting sequences
+        - does not affect the original class
+    - **Comparable**
+        - `java.lang.Comparable`
+        - `compareTo(Object toCompare)`
+        - compare to current object
+        - single sorting sequence
+        - affects the original class
+- **New Things Learned Today:**
+    - **HTTP**
+        - **HTTP vs HTTPS**
+
+          HTTPS is HTTP with encryption. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses. As a result, HTTPS is far more secure than HTTP. A website that uses HTTP has http:// in its URL, while a website that uses HTTPS has https://.
+
+        - **HTTP Session**
+
+          HTTP sessions is an industry standard feature that allows Web servers to maintain user identity and to store user-specific data during multiple request/response interactions between a client application and a Web application. HTTP sessions preserves:
+
+            - Information about the session itself (session identifier, creation time, time last accessed, etc.)
+            - Contextual information about the user (client login state, for example, plus whatever else the Web application needs to save)
+    - **TCP**
+        - **SACK**
+
+          TCP Selective Acknowledgements (SACK) are a refinement of TCP’s traditional “cumulative” acknowledgements. SACKs allow a receiver to acknowledge non-consecutive data, so that the sender can retransmit only what is missing at the receivers end. This is particularly helpful helpful on paths with a large bandwidth-delay product(BDP).
+          A Selective Acknowledgment (SACK) mechanism, combined with a selective repeat retransmission policy, can help to overcome these limitations. The receiving TCP sends back SACK packets to the sender informing the sender of data that has been received. The sender can then retransmit only the missing data segments.
+
+    - **Java Servlet**
+        - **ServletConfig object**
+
+          A servlet configuration object used by a servlet container to pass information to a servlet during initialization. ServletConfig is for a particular servlet, that means one should store servlet specific information in web.xml and retrieve them using this object.
+
+        - **ServletContext object**
+
+          ServletContext is the object created by Servlet Container to share initial parameters or configuration information to the whole application.
+
+        - **How does servlet communicate with each other?**
+
+          Servlet communication is sending users request, and the response object passed to a servlet to another servlet. We are using the method **getParameter()**, which is basically used to get the input from user value in a specified field. So, when Servlet request the object is passed from one servlet to another servlet, then we will use this method to get the input that the user has given in an HTML/JSP form.
+
+- **Learning Plan Tomorrow:**
+    - Review OOP
+    - Review IO Stream
+    - Learn more about SpringBoot
