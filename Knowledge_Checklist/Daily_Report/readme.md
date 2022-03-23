@@ -550,3 +550,79 @@
     - Review OOP
     - Review IO Stream
     - Learn more about SpringBoot
+
+## March 22
+
+- **Content Review Today:**
+    - **OOP**
+        - Inheritance
+        - Polymorphism
+            - Override vs Overload
+        - Encapsulation
+        - Abstraction
+            - Abstract class vs Interface
+    - **I/O Stream**
+        - Types of I/O streams
+            - Byte Stream
+            - Character Stream
+            - Primitive data Stream
+            - Object Stream
+        - Buffered Stream
+        - Data Stream
+- **New Things Learned Today:**
+    - Main Features of Spring Boot
+        - Starters
+        - Auto-configuration
+        - Actuator
+        - Security
+        - Logging
+    - **What are the two features in Spring?**
+        - IOC (Inversion of Control)
+
+          IOC supports objects to give their dependencies rather than looking for creating dependent objects.
+
+        - AOP (Aspect Oriented Programming)
+
+          The AOP part of Spring supports unified development by ensuring separation of application’s business logic from other system services.
+
+    - **What are the Spring Boot starters?**
+
+      Spring Boot starters are a set of convenient dependency management providers that can be used in the application to enable dependencies. These starters, make development easy and rapid.
+
+- **Learning Plan Tomorrow:**
+    - Review SQL database
+    - Review Serialization
+    - Keep learning about Spring Boot
+- **Today’s HW**
+    - CI/CD (Continuous Integration/Continuous Delivery)
+
+      A CI/CD pipeline is a series of steps that must be performed in order to deliver a new version of software. It introduces monitoring and automation to improve the process of application development, particular at the integration and testing phases, as well as during delivery and deployment.
+
+    - **Procedures of CI/CD pipeline**
+        - Source
+
+          In the source stage, pipeline is triggered by a code repository. Any change in the program triggers a notification to the CI/CD tool that runs an equivalent pipeline. Other common triggers include user-initiated workflows, automated schedules, and the results of other pipelines.
+
+        - Build
+
+          In this stage, we merge the source code and its dependencies which the code should be compiled. Failure to pass the build stage means there is a fundamental project misconfiguration, so it is better for us to know the issue immediately.
+
+        - Test
+
+          Test stage includes the execution of automated tests to validate the correctness of code and the behavior of the software. This stage prevents easily reproducible bugs from reaching the clients.
+
+        - Deploy
+
+          This is the final stage that the product goes live. Once the build has successfully passed through all the required test scenarios, it ready to deploy to live server.
+
+    - **CI/CD Tools**
+        - Jenkins
+        - GitLab
+        - TeamCity
+    - **GitHub Actions CI/CD**
+        1. Create or choose a repository, and pick a project
+        2. Open GitHub Actions in the repository to start building CI/CD workflow.
+        3. Make changes to our code to trigger the CI/CD pipeline.
+        4. Take a look at the workflow visualizer and live logs to get a full look into how the pipeline is running.
+
+      *Reference: [https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/)*
