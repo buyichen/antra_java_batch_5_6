@@ -626,3 +626,57 @@
         4. Take a look at the workflow visualizer and live logs to get a full look into how the pipeline is running.
 
       *Reference: [https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/)*
+
+## March 23
+
+- **Content Review Today:**
+    - SQL database:
+        - Normalization/De-normalization
+        - Transaction
+            - ACID
+        - Index
+            - Clustered Index
+            - Non-Clustered Index
+            - B tree
+            - B+ tree
+        - SQL Data Languages
+            - DDL
+            - DQL
+            - DML
+            - DCL
+            - DTL
+    - Java Serialization:
+        - Serialize Object
+        - Deserialize Object
+        - **transient** keyword
+        - ObjectInputStream/ObjectOuputStream
+- **New Things Learned Today:**
+    - AOP
+        - Key Terminology
+            - Aspect
+
+              An aspect is a modularization of a concern that cuts across multiple classes. Unified logging can be an example of such cross-cutting concern.
+
+            - Join Point
+
+              A *Joinpoint* is a point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a *JoinPoint* always represents a method execution.
+
+            - PointCut
+
+              A *Pointcut* is a predicate that helps match an *Advice* to be applied by an *Aspect* at a particular *JoinPoint*.
+
+              We often associate the *Advice* with a *Pointcut* expression, and it runs at any *Joinpoint* matched by the *Pointcut*.
+
+            - Advice
+
+              An *Advice* is an action taken by an aspect at a particular *Joinpoint*. Different types of advice include *“around,” “before,”* and *“after.”* In Spring, an *Advice* is modelled as an interceptor, maintaining a chain of interceptors around the *Joinpoint*.
+
+        - **Transaction**  
+          The Spring Framework's declarative transaction management is made possible with Spring aspect-oriented programming (AOP), although, as the transactional aspects code comes with the Spring Framework distribution and may be used in a boilerplate fashion, AOP concepts do not generally have to be understood to make effective use of this code.
+
+          In Spring, we can use @Transactional to approach as the example showing in the official document : [https://docs.spring.io/spring-framework/docs/3.0.0.M4/reference/html/ch10s05.html](https://docs.spring.io/spring-framework/docs/3.0.0.M4/reference/html/ch10s05.html)
+
+- **Learning Plan Tomorrow:**
+    - Review No-SQL database
+    - Keep learning Spring Boot related Topic
+    - Review Java Collections
