@@ -680,3 +680,79 @@
     - Review No-SQL database
     - Keep learning Spring Boot related Topic
     - Review Java Collections
+
+## March 24
+
+- **Content Review Today:**
+    - **No-SQL database**
+        - Categories of No-SQL database
+            - Document Data Store
+            - Key-value pair Store
+            - Column Family Store
+            - Graph Data Store
+        - CAP
+            - Consistency
+            - Availability
+            - Partition tolerance
+        - Sharding and Replica
+        - MongoDB
+        - Redis
+    - **Java Collection**
+        - List
+            - ArrayList
+            - LinkedList
+            - Vector
+            - Stack
+        - Set
+            - HashSet
+            - LinkedHashSet
+            - TreeSet
+        - Queue
+            - Deque
+                - ArrayDeque
+            - LinkedList
+            - PriorityBlockingQueue
+        - Map
+            - HashMap
+                - Hash Collision
+                - equals() and hashCode()
+            - ConcurrentHashMap
+                - ConcurrentHashMap vs SynchronizedMap
+            - HashTable
+            - LinkedHashMap
+            - TreeMap
+- **New Things Learned Today:**
+    - **MVC**
+        - **What is MVC?**
+
+          **MVC** Pattern stands for Model-View-Controller Pattern. This pattern is used to separate application’s concerns.
+
+            - **Model** represents an object or JAVA POJO(Plain Old Java Object) carrying data. It can also have logic to update controller if its data changes.
+            - **View** represents the visualization of the data that model contains.
+            - **Controller** acts on both model and view. It controls the data flow into model object and updates the view whenever data changes. It keeps view and model separate.
+    - **Spring MVC**
+
+      A Spring MVC is a Java framework which is used to build web applications. It follows the Model-View-Controller design pattern. It implements all the basic features of a core spring framework like Inversion of Control, Dependency Injection. A Spring MVC provides an elegant solution to use MVC in spring framework by the help of **DispatcherServlet**. Here, **DispatcherServlet** is a class that receives the incoming request and maps it to the right resource such as controllers, models, and views.
+
+        - **Spring Web Model-View-Controller**
+            - **Model** - A model contains the data of the application. A data can be a single object or a collection of objects.
+            - **Controller** - A controller contains the business logic of an application. Here, the @Controller annotation is used to mark the class as the controller.
+            - **View** - A view represents the provided information in a particular format. Generally, JSP+JSTL is used to create a view page. Although spring also supports other view technologies such as Apache Velocity, Thymeleaf and FreeMarker.
+            - **Front Controller** - In Spring Web MVC, the DispatcherServlet class works as the front controller. It is responsible to manage the flow of the Spring MVC application.
+        - **Spring MVC workflow**
+            - All the incoming request is intercepted by the DispatcherServlet that works as the front controller.
+            - The DispatcherServlet gets an entry of handler mapping from the XML file and forwards the request to the controller.
+            - The controller returns an object of ModelAndView.
+            - The DispatcherServlet checks the entry of view resolver in the XML file and invokes the specified view component.
+        - **Advantages of Spring MVC**
+            - Separate roles
+            - Light-weight
+            - Powerful Configuration
+            - Rapid development
+            - Reusable business code
+            - Easy to test
+            - Flexible Mapping
+- **Learning Plan Tomorrow:**
+    - Java Exception Handling
+    - Concurrency in Database
+    - Keep learning Spring
