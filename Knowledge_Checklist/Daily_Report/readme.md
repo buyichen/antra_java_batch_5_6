@@ -756,3 +756,70 @@
     - Java Exception Handling
     - Concurrency in Database
     - Keep learning Spring
+
+## March 25
+
+- **Content Review Today:**
+    - **Java Exception Handling**
+        - Types of Exception
+            - Checked Exception
+                - I/O Exception
+                - CompiletimeException
+            - Unchecked Exception
+                - RuntimeException
+            - How to handle Exception
+                - try/catch
+                - finally
+            - Overriding method handle exceptions
+            - Custom Exception
+            - Throw vs Throws
+            - Exception vs Error
+    - **Database Concurrency Control**
+        - Dirty Data
+        - Non-repeated Read
+        - Phantom Read
+        - Isolation Level
+        - Lock
+            - Type of Locks
+                - Shared
+                - Update
+                - Exclusive
+                - Schema (modification and stability)
+                - Bulk Update
+                - Intent (shared, update, exclusive)
+                - Key Range (shared, insert, exclusive)
+            - Lock Escalation
+            - Dead Lock
+            - Optimistic Lock
+            - Pessimistic Lock
+- **New Things Learned Today:**
+    - **Swagger**
+
+      Swagger is used in sharing documentation in the products, managers, testers and developers and also is used by vatious tools in automating API Related processes.It is also used in developing APIs through OpenAPI Specification(OAS), also consists of open source and professional tools.
+
+        - Features provided by Swagger
+            - **Swagger Editor** used in writing OpenAPI Specs.
+            - **Swagger UI** helps in rendering OpenAPI Specs as an Interactive API Documentation.
+            - **Swagger Codegen** used in generating sever stubs and libraries from OpenAPI Spec.
+        - API Testing
+
+          API Testing helps in analyzing Application Program Interface in verifying its functionality, security, performance and reliability. It is performed by requesting it to one or more API Endpoints and also in comparing the response with the results. API Testing performs with critical layers such as Business, and in business logic processing it is carried out and all Transactions through the User Interface and Database Layers.
+
+            - Benefits of API Testing
+                - Language Independent - used in language automation and also in structuring data, and making the verification and stable.
+                - GUI Independent - used in performing the app prior to GUI Testing and also can gives feedback and better team productivity.
+                - Improved Test Coverage - used in creating and allowing automated tests with high coverage.
+                - Faster Release - used in executing API Testing and testing, allowing the software development and releasing products faster.
+            - Type of API Testing
+                - Unit Testing
+                - Functional Testing
+                - Load Testing
+                - Error Detection
+                - Security Testing
+                - UI Testing
+                - Penetration Testing
+                - Fuzz Testing
+- **Learning Plan Tomorrow:**
+    - Review Java Concurrency
+    - Review JDBC
+    - Review Spring
