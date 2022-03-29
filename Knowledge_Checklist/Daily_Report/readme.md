@@ -823,3 +823,117 @@
     - Review Java Concurrency
     - Review JDBC
     - Review Spring
+
+## March 28
+
+- **Content Review Today:**
+    - **Multi-Threading**
+        - Process
+        - Thread
+            - Thread Life Cycle
+                - New State
+                - Runnable State
+                - Running State
+                - Blocked State
+                - Dead State
+            - Thread Creation
+                - Extending Thread Class
+                - Implementing Runnable Interface
+                - Implementing Callable Interface
+                - Thread Pool
+                    - corePoolSize
+                    - maximumPoolSize
+                    - KeepAliveTime
+                    - Time unit
+                    - work queue
+                    - thread factory
+                    - handler
+                        - abortPolicy
+                        - callerRunPolicy
+                        - discardPolicy
+                        - discardOldestPolicy
+        - Synchronization
+            - Ways to perform Thread Synchronization
+                - Synchronized Method
+                - Synchronized Block
+                - Static Synchronization
+            - Lock
+                - Dead Lock
+                - Lock Reentrance
+                - Lock Interface
+    - JDBC
+        - Steps to connect to database via JDBC
+        - Types of JDBC statements
+            - Statement
+            - PreparedStatement
+            - CallableStatement
+        - Transaction Management
+            - auto-commit
+    - Spring
+        - AOP + IOC
+        - Bean Scope
+            - single
+            - prototype
+            - request
+            - session
+            - global session
+        - Important Annotations
+            - @Autowired
+            - @Resource
+            - @Component
+            - @Scope(”singleton/prototype”)
+            - @Configuration
+            - @ComponentScan(”package”)
+            - @Bean
+        - Spring MVC
+        - Spring Boot
+            - auto config
+            - starter
+            - tomcat
+            - annotation based
+        - Restful API
+            - @RestController
+            - @Controller
+            - @Service
+            - @Repository
+            - @GetMapping
+            - @PostMapping
+            - @PutMapping
+            - @DeleleMapping
+            - @RequestMapping
+            - @PatchMapping
+            - @PathVariable
+            - @RequestParam
+            - @RequestBody
+            - @ResponseBody
+        - Lombok
+            - @Data
+            - @AllArgsConstructor
+            - @NoArgsConstructor
+        - Exception
+            - @ExceptionHandler
+            - @ControllerAdvice
+            - @ResponseStatus
+        - Validation
+            - @NotNull
+            - @NotEmpty
+            - @NotBlank
+            - @Min
+            - @Max
+            - @Pattern
+            - @Email
+- **New Things Learned Today:**
+    - JAR vs WAR
+        - JAR stands for Java Archive. JAR is zipped file containing the compressed versions of .class files and resources of compiled Java libraries and application which mean its for pure Java application.
+        - WAR stands for Web Application Resource. These archive files have the .war extension and are used to package web applications that we can deploy on any Servlet/JSP container.
+    - Lock vs Synchronized
+        - Lock is an interface whereas Synchronized is a keyword.
+        - Synchronized releases the lock automatically, and Lock must release the lock manually.
+        - Lock can interrupt the response of the thread waiting for the lock, but Synchronized will not, and the thread will wait all the time.
+        - Lock lets you know if a thread has a lock, but Synchronized can’t.
+        - Lock can improve the efficiency of multiple threads.
+        - Synchronized locks classes, methods, and code blocks, while lock is block-wide.
+- **Learning Plan Tomorrow:**
+    - Review the Interview Questions that provided today.
+    - Review Spring Annotation
+    - Review Java 8 new features
