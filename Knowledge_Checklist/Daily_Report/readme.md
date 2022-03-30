@@ -937,3 +937,157 @@
     - Review the Interview Questions that provided today.
     - Review Spring Annotation
     - Review Java 8 new features
+
+## March 29
+
+- **Content Review Today:**
+    - **Spring Annotations**
+        - Spring Core
+            - @Configuration
+            - @ComponentScan
+            - @Import
+            - @Component
+            - @Service
+            - @Autowired
+            - @Bean
+            - @Lookup
+            - @Primary
+            - @Required
+            - @Value
+            - @DependsOn
+            - @Lazy
+            - @Scope
+            - @Profile
+        - Spring Boot
+            - @SpringBootApplication
+            - @Configuration
+            - @ComponentScan
+            - @EnableAutoConfiguration
+        - Spring MVC
+            - @Service
+            - @Repository
+            - @Controller
+            - @RequestBody
+            - @ResponseBody
+            - @RestController
+            - @RequestMapping(method=RequestMethod.GET, value=”/path”)
+            - @RequestParam(value=”name”, defaultValue=”World”)
+            - @PathVariable(”placeholderName”)
+            - @ExceptionHandler
+            - @CrossOrigin
+    - **Java 8 new features**
+        - Functional Interface
+            - Build-in Functional Intefaces
+                - Comparator
+                - Runnable
+                - Predicate
+                - Function
+        - Lambda
+            - Lambda Scopes
+        - Stream
+            - Intermediate Operation
+                - Filter
+                - Sorted
+                - Map
+            - Terminate Operation
+                - Match
+                - Count
+                - Reduce
+            - Parallel Streams
+                - Parallel Sort
+            - Sequential Streams
+                - Sequential Sort
+        - Optional
+            - Prevent NullPointerException
+- **New Things Learned Today:**
+    - **Authentication**
+        - The proof for system to verify your identity (username/userID + password)
+    - **Encryption**
+        - Symmetric (Data Encryption)
+
+          Symmetric encryption is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information. The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process.
+
+          e.g. 123 → key1 → %^^* → key1 → 123
+
+        - Asymmetric (Signature Encryption)
+            - Public Key
+
+              For encryption.
+
+            - Private key
+
+              For decryption, it is intended to be private so that only the authenticated recipient can decrypt the message.
+
+            - Keys Generation
+
+              At the heart of **Asymmetric Encryption** lies a cryptographic algorithm. This algorithm uses a key generation protocol (a kind of mathematical function) to generate a key pair. Both the keys are mathematically connected with each other. This relationship between the keys differs from one algorithm to another.
+
+              The algorithm is basically a combination of two functions – **encryption function and decryption function**. To state the obvious, the encryption function encrypts the data and decryption function decrypts it.
+
+
+            e.g. Server (public key of user) “hello” ← SSH (private)
+            
+    - **Hashing**
+        
+        Hashing is a cryptographic process that can be used to validate the authenticity and integrity of various types of input. It is widely used in authentication systems to avoid storing plaintext passwords in databases, but is also used to validate files, documents and other types of data.
+        
+        - Hashing in Authentication
+            
+            In authentication systems, when users create a new account and input their chosen password, the application code passes that password through a hashing function and stores the result in the database. When the user wants to authenticate later, the process is repeated and the result is compared to the value from the database. If it's a match, the user provided the right password.
+            
+        - Hashing Algorithms
+            - SHA-1
+            - SHA-2 (Family of Hashing)
+            - MD5
+    - **Encoding**
+        - URL Encoding
+        - File Encoding
+        - Unicode Encoding
+        - ASCII Encoding
+    - **HTTPS**
+        - HTTP + SSL (Secure Socket Layer) / TLS (Transport Layer Security)
+            
+            HTTPS establishes the communication between the browser and the webserver. It uses the **Secure Socket Layer** (SSL) and **Transport Layer Security** (TLS) protocol for establishing communication. The new version of SSL is TSL.
+            
+        - TCP Handshake
+        - TLS Handshake
+    - **Token**
+        - JWT
+            - Header: Algorithm & Token Type
+            - Payload: Data
+            - Verify Signature
+    - **OAuth2**
+        - OAuth Roles
+            - Resource Owner:
+                
+                The resource owner is the *user* who authorizes an *application* to access their account. The application’s access to the user’s account is limited to the scope of the authorization granted (e.g. read or write access)
+                
+            - Client:
+                
+                The client is the *application* that wants to access the *user*’s account. Before it may do so, it must be authorized by the user, and the authorization must be validated by the API.
+                
+            - Resource Server:
+                
+                The resource server hosts the protected user accounts.
+                
+            - Authorization Server:
+                
+                The authorization server verifies the identity of the *user* then issues access tokens to the *application*.
+                
+        - Abstract Protocol Flow
+            1. The *application* requests authorization to access service resources from the *user*
+            2. If the *user* authorized the request, the *application* receives an authorization grant
+            3. The *application* requests an access token from the *authorization server* (API) by presenting authentication of its own identity, and the authorization grant
+            4. If the application identity is authenticated and the authorization grant is valid, the *authorization server* (API) issues an access token to the application. Authorization is complete.
+            5. The *application* requests the resource from the *resource server* (API) and presents the access token for authentication.
+            6. If the access token is valid, the *resource server* (API) serves the resource to the *application.*
+    - **CORS**
+        - RESTful + SPA (angular react)
+    - **SSO (single sign on)**
+        - login once, login everything
+    - **Lightweight Directory Access Protocol (LDAP)**
+        - Active Directory (AD)
+            - Directory DB
+- **Learning Plan Tomorrow:**
+    - Review Java Keywords
+    - Review Interview Questions
