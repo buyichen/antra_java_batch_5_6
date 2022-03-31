@@ -1091,3 +1091,150 @@
 - **Learning Plan Tomorrow:**
     - Review Java Keywords
     - Review Interview Questions
+
+## March 30
+
+- **Content Review Today:**
+    - **Java Keywords**
+        - Primitive Type Keywords
+            - `boolean`, `byte`, `char`, `short`, `int`, `long`, `float`, `double`
+        - Control Flow
+            - `if`, `else if`, `else`
+            - `do`, `while`, `for`
+            - `switch`, `case`
+            - `continue`, `break`
+            - `return`
+            - `default`
+        - Access Modifier
+            - `private`, `protected`, `public`
+        - Class, Method, Variable Modifier
+            - `abstract`, `class`, `extends`, `final`, `implements`, `interface`, `native`, `new`, `static`, `strictfp`, `synchronized`, `transient`, `volatile`
+        - Exception Handling
+            - `assert`, `try`, `catch`, `throw`, `throws`, `finally`
+        - Enumeration
+            - `enum`
+        - Object Keywords
+            - `new`, `instanceof`, `super`, `this`
+    - **Hibernate**
+        - ORM (Object Relational Mapping)
+
+          ORM is a programming technique for converting data between relational databases and OOP languages such as Java.
+
+            - ORM Tools
+                - Hibernate
+                - Sequelize
+                - MyBatis
+                - Doctrine 2
+                - SQLAlchemy
+            - Advantages of ORM
+                - ORM allows a programmer to interact with a relational database without knowing very well about SQL.
+                - ORM allows a developer to use the language of their choice.
+                - ORM provides the flexibility of switching different types of databases to developer. By adding a layer of abstraction, a developer doesn’t have to remember everything regarding the different between the different SQL languages. Instead, they can focus exclusively on using ORM and it handles low-level database interaction.
+                - ORM offer better performance than standard SQL, especially when a developer not knowing the SQL a lot.
+                - Transaction management and automatic key generation.
+                - Fast development of application.
+            - Disadvantages of ORM
+                - Potential vendor lock-in. Since ORM is often provided through a library, framework, or API, there’s always the chance a developer may become too dependent on ORM to move to other choices.
+                - Another potential disadvantage of using ORM is the abstraction which make it easy to use. However, in some scenario developer needs to know exactly what happening under the abstraction in the low-level perspective. Thus, it will make the troubleshooting more difficult.
+        - JPA (Java Persistence API)
+
+          JPA is a **specification** of Java. It is used to persist data between Java object and relational database. JPA acts a bridge between object-oriented domain models and relational database systems.
+
+          As JPA is just a specification, it doesn’t perform any operation by itself. It requires an implementation. So, ORM tools like **Hibernate** implements JPA specification for data persistence.
+
+        - Hibernate Architecture
+
+          The Hibernate architecture consists many objects such as a persistent object, session factory, session, query, transaction, etc. Applications developed using Hibernate is mainly categorized into 4 parts:
+
+            - Java Application
+            - Hibernate Framework
+                - Configuration File
+                - Mapping File
+                - Core Objects of Hibernate Framework:
+                    - SessionFactory:
+
+                      This provides a factory method to get session objects and clients of ConnectionProvider. It holds a second-level cache (optional) of data.
+
+                    - Session:
+
+                      This is a short-lived object that acts as an interface between the Java application objects and database data.
+
+                        - The session can be used to generate transaction, query, and criteria objects.
+                        - It also has a mandatory first-level cache of data.
+                    - Transaction:
+
+                      This object specifies the atomic unit of work and has methods useful for transaction management. This is optional.
+
+                    - ConnectionProvider:
+
+                      This is a factory of JDBC connection objects and it provides an abstraction to the abstraction to the application from the DriverManager. This is optional.
+
+                    - TransactionFactory:
+
+                      This is a factory of Transaction objects. It is optional.
+
+            - Internal API
+                - JDBC
+                - JTA (Java Transaction API)
+                - JNDI (Java Naming Directory Interface)
+            - Database
+                - MySQL, PostgreSQL, etc.
+        - Fetch Type
+            - Eager Loading
+            - Lazy Loading
+        - Mapping
+            - One to One
+            - One to Many
+            - Many to One
+            - Many to Many
+        - Cascade
+            - persist
+            - merge
+            - refresh
+            - remove detach
+            - all
+        - Cache
+            - first level cache: session level (open by default)
+            - second level cache: session factory level (close by default)
+- **New Things Learned Today:**
+    - REST API Consumer
+        - Feign Client
+        - RestTemplate
+    - 3-tier Architecture
+        - Web Layer
+            - Communication with clients using network protocols like HTTP, websocket
+            - Input Validation
+            - Exception Handling
+            - Authorization, access control
+        - Service Layer
+            - Business Logic
+            - Transaction Management
+        - Data Layer
+            - Data Access, CRUD operations to DB
+    - Monolithic Architecture
+
+      Everything in one package. Deploy once and all functions are up. All components are bound together.
+
+    - Distributed Systems
+        - SOA (Service-Oriented Archiecture)
+
+          Focusing on interaction and integration between independent services, usually using a service bus, SOAP or messaging system.
+
+            - ESB (Enterprise Service Bus)
+                - In SOA, an ESB acts as a center control of the communication and integration between the services.
+                - Popular product like MuleSoft ESB, Anypoint ESB
+        - Microservice Architecture
+
+          This is an architectural development style that allows building applications as a collection of small autonomous services developed for a business domain. It is a variant of structural style architecture that helps arrange applications as a loosely coupled service collection. The Microservice contains fine-grained services and lightweight protocol.
+
+            - Service Discovery
+                - Spring Cloud Netflix Eureka
+                - Act like a registry to record all the addresses of each service
+            - Communication
+                - HTTP
+                - RestTemplate class
+                - OpenFeign Client
+                - Netflix Ribbon is used with Eureka to implement Client-side load balancing.
+- **Learning Plan Tomorrow:**
+    - Review Java Web
+    - Review Spring
