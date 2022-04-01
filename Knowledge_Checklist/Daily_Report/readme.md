@@ -1238,3 +1238,68 @@
 - **Learning Plan Tomorrow:**
     - Review Java Web
     - Review Spring
+
+## March 31
+
+### Content Review Today
+
+- **Java Web**
+    - OSI Model
+        - 7 Layers
+            - Application Layer
+            - Presentation Layer
+            - Session Layer
+            - Transport Layer
+            - Network Layer
+            - Data Link Layer
+            - Physical Layer
+    - TCP/IP
+        - TCP 3-way handshaking
+        - TCP 4-way handshaking
+    - UDP
+    - HTTP
+        - HTTP Request Method
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - PATCH
+        - HTTP Response
+            - HTTP Status Code
+                - 1xx information
+                - 2xx success
+                - 3xx redirection
+                - 4xx client error
+                - 5xx server error
+        - Session
+        - Cookie
+    - Servlet
+        - Servlet Life Cycle
+
+### New Things Learned Today
+
+- Microservice
+    - Log Tracing
+        - Spring Cloud Sleuth is a framework to add the traceId and spanId into the HTTP Request Header, as well as the logs.
+        - Zipkin server is used for aggregation of the logs with traceId and spanId.
+    - Config Server
+        - Spring Config Server can be used for centralizing all the configuration files for each service, also for every environment(dev, test, staging, UAT, prod).
+    - Fault Tolerance
+        - Resilience4j is the recommended framework.
+        - Netflix Hystrix (Not used anymore)
+        - Resilience4j provides: circuit breaker, retry, ratelimiter, cache, bulkhead.
+    - API Gateway
+
+      The API Gateway is a server. It is a single entry point into a system. API Gateway encapsulates the internal system architecture. It provides an API that is tailored to each client. It also has other responsibilities such as authentication, monitoring, load balancing, caching, request shaping and management, and static response handling.
+
+      API Gateway is also responsible for request routing, composition, and protocol translation. All the requests made by the client go through the API Gateway. After that, the API Gateway routes requests to the appropriate microservice.
+
+- Apache Jmeter
+
+  Tool for pressure test by create high amount of requests.
+
+
+### Learning Plan Tomorrow
+
+- Review Spring
+- Review Web Services
