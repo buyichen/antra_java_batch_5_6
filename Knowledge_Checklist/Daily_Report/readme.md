@@ -1303,3 +1303,102 @@
 
 - Review Spring
 - Review Web Services
+
+## April 1
+
+### Content Review Today
+
+- Web Service
+    - REST
+        - Producer
+        - Consumer
+        - Verbs
+        - URI
+        - Payload
+        - Header
+        - Security
+        - Document
+        - Test
+    - SOAP
+        - XML
+        - WSDL
+    - Spring Web MVC
+        - Annotations
+- Spring
+    - IOC/DI
+        - Container
+        - Factory
+        - Context
+        - Loose Coupling
+    - AOP
+        - Aspect
+        - Advice
+        - PointCut
+        - JoinPoint
+    - Spring Boot
+        - Auto-Configuration
+        - Embedded Server
+        - Self-Executable Jar
+        - Starter
+        - Actuator
+
+### New Things Learned Today
+
+- Cloud/AWS
+    - IASS
+
+      Infrastructure as a service
+
+    - PAAS
+
+      Platform as a service
+
+    - SAAS
+
+      Software as a service
+
+    - AWS
+
+      AWS is a platform to provide secure cloud services, database storage, offerings to compute power, content delivery, and other services to help business level and develop.
+
+        - EC2
+
+          It provides user servers with CPU, memory, disk, network and OS.
+
+        - S3
+
+          File storage using bucket and key to indicate the id. Fast and lots of space.
+
+        - SQS
+
+          Message Queue. Very simple one.
+
+        - SNS
+
+          Notification service, can send SMS, Email, SQS, HTTP etc.
+
+            - Maximum size of an S3 Bucket
+
+              The maximum size of an S3 bucket is 5 TB.
+
+        - Lambda
+
+          It hosts functions which could be triggered by other services. It is serverless. Could be used for small tasks which don’t need a dedicated server.
+
+        - RDS
+
+          RMDBS hosts, like Oracle, MySQL, PostgreSQL, etc.
+
+        - ECS
+
+          Orchestration and management of Docker containers.
+
+        - What are containers?
+
+          Containers provide a standard way to package your application’s code, configurations, and dependencies into a single object. Containers share an operating system installed on the server and run as resource-isolated processes, ensuring quick, reliable, and consistent deployments, regardless of environment.
+
+
+### Learning Plan Tomorrow
+
+- Review Application Architectures
+- Learn more about AWS
