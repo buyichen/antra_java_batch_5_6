@@ -1402,3 +1402,137 @@
 
 - Review Application Architectures
 - Learn more about AWS
+
+## April 5
+
+### Content Review Today
+
+- **Application Architectures**
+    - MVC Pattern
+        - Model
+        - View
+        - Controller
+    - Frontend-backend Separation
+        - Frontend Technologies
+            - Angular
+            - React
+            - Vue.js
+            - Jquery
+        - Ajax
+        - Communication
+            - HTTP
+            - WebSocket
+    - 3-tier Architecture
+        - Web Layer
+        - Service Layer
+        - Data Layer
+    - Monolithic
+    - SOA (Service-Oriented Architecture)
+        - ESB
+    - Microservices
+        - Service Discovery
+        - Communication
+        - Log Tracing
+        - Config Server
+        - Fault Tolerance
+- Learn more about AWS
+    - Main features of AWS
+        - Data Management and Data Transfer
+        - Compute & Networking
+        - Storage
+        - Automation and Orchestration
+        - Operations and Management
+        - Visualization
+        - Security and Compliance
+    - Main components of AWS
+        - Route 53
+        - Simple Storage Service (S3)
+            - What is S3?
+
+              S3 is referred to as Simple Storage Service. It is used to store and retrieve data of any amount at any time from anywhere in the world using the web. To use this service the payment model developed is “Pay As You Go”.
+
+            - Can we send a request to Amazon S3?
+
+              Yes, we can send a request to Amazon S3 by using the REST API or the AWS SDK wrapper libraries which wrap the underlying Amazon S3 REST API.
+
+            - What are the main difference between EC2 and S3?
+
+
+                | EC2 | S3 |
+                | --- | --- |
+                | A cloud web service | A data storage system |
+                | Used for hosting the web application | Used for storing data |
+                | Works as a huge computer machine | It is a REST interface |
+                | It can either run LINUX or Windows and could also handle PHP, Python, Apache and various other kinds of databases | It applies secure authentication keys such as HMAC-SHA1 |
+        - Simple E-mail Service (SES)
+        - Identify and Access Management (IAM)
+        - Elastic Compute Cloud (EC2)
+            - Main features of EC2
+                - **Elastic Compute Cloud (EC2)** provides virtual computing environments in the form of a virtual server known as instances, requested in the form of a web server for computing in AWS public cloud.
+                - EC2 allows pre-configured templates, Amazon Machine Images (AMIs) for instances, that allow package information needed like operating system and additional software for configuring your cloud server.
+                - Various instance types like CPU, memory, storage, and networking capabilities can be configured with EC2.
+                - EC2 offers secured login information in key pair form, where AWS stores public key as an identity for customers, whereas customers will save the private key for securely logging in the AWS cloud server.
+                - Instance store volumes for temporary data, which gets deleted when an instance is stopped or terminated.
+                - Persistent storage volume for our data for storage and computing purpose using Elastic Block Store by Amazon known as Amazon EBS volume.
+                - Regions and Availability zones give multiple physical locations for resources such as instances and Amazon EBS volumes.
+                - Protocols, ports, and source IP ranges to reach the instances can be configured in the form of a firewall.
+                - Elastic IP addresses are static IPv4 addresses for dynamic cloud computing.
+                - Metadata can be created and assigned to Amazon EC2 resources.
+                - **Virtual Private Clouds (VPCs)** are virtual networks isolated from the rest of the AWS cloud and can be connected to our private network if needed.
+        - Elastic Block Store (EBS)
+        - CloudWatch
+    - Types of AWS cloud products
+        - Computing
+            
+            Auto-scaling, EC2, Lightsat, Elastic Beanstalk, Lambda
+            
+            - Types of Computing
+                - IaaS (Infrastructure as Service)
+                - PaaS (Platform as Service)
+                - SaaS (Software as a Service)
+            - Benefit of clouding computing
+                - Scalability
+                - Reliability
+                - Security
+                - Cost Efficiency
+        - Storage
+            
+            S3, Elastic File System, Elastic Block Storage, Glacier
+            
+        - Networking
+            
+            VPC, Route53, Amazon CloudFront
+
+
+### New Things Learned Today
+
+- **Working Environment**
+
+  Local Environment → Git, Bitbucket, GitLab → CI/CD (configure maven, gradle, aws) → {
+
+  Dev with its own db ← QA/BA
+
+  Test/Integration with its own db → 3rd clients
+
+  UAT (User Acceptance Test Staging) with its own db
+
+  Production Env (Releasing) (Database → Integration’s Database as mocking) ← Users
+
+  }
+
+- **Roles in the production team**
+    - Manager (Quantity: 1)
+    - Product Owner (1)
+    - Scrum Master (1) (The above two roles could be taken by a same person)
+    - Team Lead  / Architect (1)
+    - Developers (5)
+    - QA / SDET (1)
+    - BA (1 - 2)
+    - DBA (1)
+    - Devops (1) (A BA, DBA, or Devops may work for different groups)
+
+### Learning Plan Tomorrow
+
+- Review ORM
+- Review Java OOP
+- Learn Spring Boot
