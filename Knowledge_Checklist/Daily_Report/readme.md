@@ -1536,3 +1536,98 @@
 - Review ORM
 - Review Java OOP
 - Learn Spring Boot
+
+## April 6
+
+### Content Review Today
+
+- **Java OOP**
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Abstraction
+- **Spring Boot**
+    - Auto-Configuration
+        - Convention over configuration
+        - If we don’t config it, it follows the default configuration which is commonly used in the industry.
+    - Embedded Server (Tomcat)
+        - The web starter comes with Tomcat
+    - Self-Executable Jar
+        - Build a fat jar file with everything in it.
+        - Can be executed using java -jar to run the jar file.
+        - The jar file could be easily used in Docker image file.
+    - Starter
+        - Pre-defined dependencies which can provide a specific function without conflicts and compatibility issues.
+        - web starter, security starter, jpa starter, cloud starter, etc...
+        - It simplifies the POM files.
+    - Actuator
+        - Monitoring module for Spring Boot application
+        - Provide build-in metrics for runtime status like memory, CPU thread...
+        - Provide api for external system to read the status and control the application like /health, /env
+        - Can be customized to have more metrics.
+        - Can be integrated with other tools to visualize the data like prometheus.
+
+### New Things Learned Today
+
+- Training Recap
+    - **Important**
+        - **Java 8 New Features**
+            - Lambda
+            - Stream
+                - Stream coding
+        - **Java Collections**
+        - **Java OOP**
+        - **Design Patterns**
+            - Need to know how to write Singleton
+            - Prepare 2 patterns other than Singleton and Factory.
+        - **HTTP**
+        - **Spring**
+            - Create Spring Boot project, write REST API
+            - Know IOC/DI, AOP
+            - Common Annotations
+        - **RESTful Web Service**
+            - Producer
+            - Handle Exception
+        - **Spring Web MVC**
+            - Annotations
+        - **Software Developing Life Cycle**
+            - Methodology
+                - Agile
+                - Scrum
+                - Waterfall
+                - Kanban
+                - JIRA
+    - **Not that important**
+        - Database
+            - SQL
+                - GROUPBY
+                - Join two table
+            - ORM
+                - Advantage of ORM
+            - Java EE
+                - Servlet
+        - Application Architecture
+            - 3-tier architecture
+            - Monolithic (Remember the word)
+            - SOA
+            - **Microservices (Important)**
+                - Challenges brought by Microservices
+            - **AWS**
+                - **Prepare some services that you used (important)**
+        - Spring Security
+            - Verify JWT
+        - OAUTH2
+        - **Messaging System (Conceptually very important)**
+            - **Kafka (Do a brief research)**
+        - Test
+        - Production Support
+            - moogsoft
+        - Monitoring Tools
+            - ELK
+            - Splunk
+
+### Learning Plan Tomorrow
+
+- Review Java Collections
+- Review Java Exceptions
+- Review Networking
