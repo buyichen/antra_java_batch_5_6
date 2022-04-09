@@ -1631,3 +1631,92 @@
 - Review Java Collections
 - Review Java Exceptions
 - Review Networking
+
+## April 7
+
+### Content Review Today
+
+- Java Collections
+    - List
+        - ArrayList
+        - LinkedList
+        - Vector
+        - Stack
+    - Set
+        - HashSet
+        - LinkedHashSet
+        - Sorted Set Interface
+            - TreeSet
+    - Queue
+        - PriorityQueue
+        - Deque Interface
+            - ArrayDeque
+    - Map
+        - HashMap
+        - HashTable
+        - ConcurrentHashMap
+        - SynchronizedMap
+- Java Exceptions
+    - Checked Exception
+    - Unchecked Exception
+    - Exception Handling
+        - try, catch, finally
+        - throw, throws
+    - Custom Exception
+    - Exception Hierarchy
+- Networking
+    - OSI Model
+        - Application Layer
+        - Presentation Layer
+        - Session Layer
+        - Transport Layer
+        - Network Layer
+        - Data Link Layer
+        - Physical Layer
+    - TCP
+    - HTTP
+        - HTTP Request
+            - HTTP Version Type
+            - URL
+            - HTTP Method
+            - HTTP Request Header
+            - HTTP Body (Optional)
+        - HTTP Response
+            - HTTP Status Code
+                - 1xx Information
+                    - 100 Continue
+                    - 101 Switching Protocols
+                - 2xx Success
+                    - 200 OK
+                    - 202 Created
+                    - 204 No Content
+                - 3xx Redirection
+                    - 300 Multiple Choice
+                    - 301 Moved Permanently
+                    - 302 Found
+                - 4xx Client Error
+                    - 400 Bad Request
+                    - 401 Unauthorized
+                    - 403 Forbidden
+                - 5xx Server Error
+                    - 500 Internal Server Error
+                    - 501 Not Implemented
+                    - 502 Bad Gateway
+            - HTTP Response Header
+            - HTTP Body (Optional)
+        - HTTP Request Method
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - PATCH
+            - HEAD
+            - OPTIONS
+            - TRACE
+            - CONNECT
+
+### Learning Plan Tomorrow
+
+- Review Java Thread
+- Review Spring Boot REST API
+- Review CI/CD
