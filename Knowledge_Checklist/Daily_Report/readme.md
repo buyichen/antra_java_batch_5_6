@@ -1720,3 +1720,57 @@
 - Review Java Thread
 - Review Spring Boot REST API
 - Review CI/CD
+
+## April 11
+
+### Content Review Today
+
+- Java Thread
+    - Process
+    - Thread
+        - Thread Class
+        - Runnable Interface
+        - Callable Interface
+        - Thread Pool
+    - Synchronization
+        - `Synchronized` Keyword
+            - Synchronized Method
+            - Synchronized Block
+            - Static Synchronization
+        - Deadlock
+        - Lock
+            - Lock Reentrance
+            - Lock Interface
+            - ReadWriteLock Interface
+        - SynchronizedMap vs ConcurrentHashMap
+- Spring Boot REST API
+    - Service
+        - @Service
+    - Controller
+        - @RestController
+        - @RequestMapping
+        - @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
+        - @RequestBody, @ResponseBody, @RequestParam, @PathVariable, @RequestHeader, @ResponseStatus
+- CI/CD
+    - Steps
+        - Build
+            - Maven, Gradle
+        - Test (Unit, Integration)
+            - Junit, Mockito
+        - Report (Code Coverage, Spot Bugs)
+            - Jacoco, SpotBugs, Checkstyle
+        - Package (war, jar, Docker Images)
+            - Maven, Gradle, SonaQube
+        - Install/Upload
+            - Nexus Repo Management, AWS ECR
+        - Deploy
+            - ECS, Kubernates, ECR, Openshift
+    - Tools
+        - Jenkins
+
+### Learning Plan Tomorrow
+
+- Review Stream API
+- Review Spring AOP/IOC
+- Review AWS
+- Revise Resume
