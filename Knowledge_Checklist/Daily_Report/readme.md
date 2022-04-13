@@ -1774,3 +1774,78 @@
 - Review Spring AOP/IOC
 - Review AWS
 - Revise Resume
+
+## April 12
+
+### Content Review Today
+
+- **Stream API**
+    - Intermediate Operation
+        - map()
+        - flatmap()
+        - filter()
+    - Terminal Operation
+        - forEach()
+        - collect()
+    - Reduce Operation
+        - reduce()
+    - Parallel Stream
+    - Advantage/Disadvantage of Stream
+    - Collections vs Stream
+    - For Loop vs Stream
+- **Spring AOP/IOC**
+    - AOP
+        - Aspect
+        - Advice
+        - PointCut
+        - JoinPoint
+    - IOC/DI
+        - Injection Types
+            - Constructor
+            - Setter
+            - Field
+        - Container
+        - Factory
+        - Context
+        - Loose Coupling
+- Cloud/AWS
+    - Type of Cloud Computing
+        - IAAS (Infrastructure as a service)
+        - PAAS (Platform as a service)
+        - SAAS (Software as a service)
+    - AWS
+        - EC2
+
+          Provides user servers with CPU, memory, disk, network and OS.
+
+        - S3
+
+          File storage using bucket and key to indicate the id.
+
+        - SQS
+
+          Message Queue.
+
+        - SNS
+
+          Notification service
+
+        - Lambda
+
+          Hosts functions which could be triggered by other service. It is serverless.
+
+        - RDS
+
+          RDBMS hosts.
+
+        - ECS
+
+          Orchestration and management of Docker containers.
+
+
+### Learning Plan Tomorrow
+
+- Keep Revising Resume
+- Review Security
+- Review Collections
+- Review Design Pattern
